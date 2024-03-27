@@ -22,6 +22,13 @@ public class Scultura extends OperadArte{
         System.out.println("inserisci il materiale di cui è fatta la scultura");
         this.materiale = getString();
     }
+    public Scultura(Scultura scultura) {
+        super(scultura);
+        this.altezza = scultura.altezza;
+        this.larghezza = scultura.larghezza;
+        this.profondita = scultura.profondita;
+        this.materiale = scultura.materiale;
+    }
 
     @Override
     public double printIngombro() {

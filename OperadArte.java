@@ -12,6 +12,10 @@ public abstract class OperadArte{
         System.out.println("inserisci l'autore di quest'opera d'arte");
         this.artista = getString();
     }
+    public OperadArte(OperadArte operadArte){
+        this.titolo = operadArte.titolo;
+        this.artista = operadArte.artista;
+    }
 
     public void setTitolo(String titolo) {
         this.titolo = titolo;
