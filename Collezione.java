@@ -93,7 +93,7 @@ public class Collezione{
                 info = info.concat(o.toString());
                 info = info.concat("\tingombro:\t" + o.printIngombro() + "\n\n");
             }catch (NullPointerException e){
-                info = info.concat("slot vuoto della collezione\n");
+                info = info.concat("\tslot vuoto della collezione\n\n");
             }
         }
         return info;

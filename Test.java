@@ -23,7 +23,7 @@ public class Test{
             case 2 -> {
                 System.out.println("è una scultura?\t(altrimenti rimuovo un quadro)");
                 if(getBoolean()) collection.add(new Scultura());
-                else collection.add(new Quadro());
+                else collection.remove(new Quadro());
             }
             case 3 -> collection.modifica();
             case 4 -> System.out.println(collection.toString());
