@@ -31,7 +31,7 @@ public class Test{
         esecuzione(collection);
     }
 
-    private static boolean getBoolean() {
+    public static boolean getBoolean() {
         try {
             return new java.util.Scanner(System.in).nextBoolean();
         }catch (java.util.InputMismatchException e){
